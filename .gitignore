@@ -1,5 +1,7 @@
 credentials.json
 token.json
+input/**
+input/*.*
 output/*.md
 __pycache__
 src/__pycache__
