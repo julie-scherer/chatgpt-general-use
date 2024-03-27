@@ -6,7 +6,7 @@ client = OpenAI(api_key=get_api_key())
 
 input_dir = "input"
 output_dir = "output"
-output_file = "filename.md"
+output_file = "results.md"
 
 all_inputs = ""
 files_found = os.listdir(input_dir)
@@ -23,6 +23,7 @@ if files_found:
         file_path = os.path.join(input_dir, file)
         opened_file = open(file_path, "r")
         all_inputs += opened_file.read()
+        all_inputs += '/n'
 
 
 system_prompt = f"""
