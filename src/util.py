@@ -1,5 +1,7 @@
 import os
+from dotenv import load_dotenv
 
+load_dotenv()
 
 # Gets the API key from the environment
 def get_api_key():
